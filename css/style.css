@@ -15,27 +15,30 @@
 body {
     font-family: 'Bai Jamjuree', sans-serif;
 }
-h1, h2, h3 {
+h1, h2 {
     color: var(--DarkGrayish-Blue);
     text-align: center;
+    margin-bottom: 2rem;
 }
 h1 {
     font-size: 2.75rem;
-    /* font-weight: 600; */
 }
 h2 {
     font-size: 2rem;
 }
 h3 {
+    color: var(--DarkGrayish-Blue);
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 p {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 2rem;
-    margin: 2rem 0;
     color: var(--Grayish-Blue);
 }
+
+
 /* HEADER */
 header {
     width: 100%;
@@ -50,15 +53,12 @@ header {
 .hero-container {
     width: 100%;
     max-width: 1200px;
-    margin: 5rem 0;
-    /* height: 350px; */
+    margin-top: 5rem;
     display: flex;
-    /* gap: 2rem; */
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
-figure, p {
+figure {
     margin-bottom: 4rem;
 }
 .hero-texts {
@@ -74,6 +74,7 @@ figure, p {
 .button {
     width: 15.5rem;
     padding: 1.2rem 2rem;
+    margin-top: 2rem;
     text-align: center;
     color: white;
     font-size: 1.1rem;
@@ -91,22 +92,11 @@ figure, p {
     background-color: var(--LightBlue);
 }
 
-main {
-    /* width: 100%; */
-    /* display: flex; */
-    /* justify-content: center; */
-}
-.keep-track-container {
-    /* max-width: 700px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-}
-.text-container {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-.text-container img {
 
+/* MAIN */
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }
