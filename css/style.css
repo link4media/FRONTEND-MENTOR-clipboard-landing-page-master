@@ -15,88 +15,207 @@
 body {
     font-family: 'Bai Jamjuree', sans-serif;
 }
-h1, h2 {
+h1, h2, h3 {
     color: var(--DarkGrayish-Blue);
     text-align: center;
-    margin-bottom: 2rem;
 }
 h1 {
     font-size: 2.75rem;
+    margin-top: 4rem;
 }
 h2 {
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 h3 {
-    color: var(--DarkGrayish-Blue);
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    line-height: 3.5rem;
 }
 p {
     font-size: 1.2rem;
-    font-weight: 400;
     line-height: 2rem;
     color: var(--Grayish-Blue);
+}
+li, a {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
 }
 
 
 /* HEADER */
 header {
     width: 100%;
-    height: 700px;
+    padding: 9rem;
     background-image: url(../images/bg-header-desktop.png);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
+    background-size: contain;
     display: flex;
     justify-content: center;
 }
 .hero-container {
     width: 100%;
-    max-width: 1200px;
-    margin-top: 5rem;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-figure {
-    margin-bottom: 4rem;
 }
 .hero-texts {
     width: 700px;
     text-align: center;
 }
+.hero-texts p {
+    margin: 1.5rem 0 3.5rem;
+}
 .hero-nav {
     width: 700px;
-    max-width: 570px;
+    max-width: 560px;
     display: flex;
     justify-content: space-evenly;
 }
 .button {
-    width: 15.5rem;
+    width: 15.1rem;
     padding: 1.2rem 2rem;
-    margin-top: 2rem;
     text-align: center;
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
     border-radius: 10rem;
-    box-shadow: inset 0 -4px 0px rgba(0, 0, 0, 0.2) ;
 }
 .button:hover {
     opacity: .8;
 }
 .button1 {
     background-color: var(--StrongCyan);
+    box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2), 0 0.5em .5em hsl(171, 66%, 44%, 0.3);
+}
+.button1:hover {
+    box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2), 0 0.5em 1em var(--StrongCyan);
 }
 .button2 {
     background-color: var(--LightBlue);
+    box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2), 0 0.5em .5em hsl(233, 100%, 69%, 0.3);
+}
+.button2:hover {
+    box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2), 0 0.5em 1em var(--LightBlue);
 }
 
 
 /* MAIN */
 main {
-    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* MAIN / Containers */
+.text-container {
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+    margin-bottom: 8rem;
+}
+/* Container #1 */
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
-    place-items: center;
+    align-items: center;
+}
+.keep-track-container {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+}
+.snippets-image {
+    position: relative;
+    left: -30px;
+}
+.snippets-container {
+    width: 58%;
+    height: 70%;
+    margin-top: 6rem;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.snippets h3 {
+    text-align: left;
+}
+.snippets p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Container #3 */
+.workflow-container {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tools {
+    width: 360px;
+    text-align: center;
+}
+.tools h3 {
+    margin: 1.3rem 0;
+}
+.tools p {
+    font-size: 1rem;
+}
+
+/* Container #4 */
+.brands {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer figure img {
+    width: 45%;
+}
+.footer-nav {
+    height: 70px;
+    display: grid;
+    gap: 0 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.footer-nav a {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+    color: var(--DarkGrayish-Blue);
+    
+}
+.social-media {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media img {
+    cursor: pointer;
 }
