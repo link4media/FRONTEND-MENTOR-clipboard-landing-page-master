@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: .5s;
+    transition: .3s;
 }
 :root {
     --StrongCyan: hsl(171, 66%, 44%);
@@ -41,7 +41,9 @@ li, a {
     text-decoration: none;
     display: inline-block;
 }
-
+a:hover {
+    /* color: var(--StrongCyan); */
+}
 
 /* HEADER */
 header {
@@ -179,7 +181,7 @@ main {
 
 /* Container #4 */
 .brands {
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,7 +211,14 @@ footer figure img {
     font-size: 1.2rem;
     margin-bottom: 1.6rem;
     color: var(--DarkGrayish-Blue);
-    
+}
+.footer-nav a {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+    color: var(--DarkGrayish-Blue);
+}
+.footer-nav a:hover {
+    color: var(--StrongCyan);
 }
 .social-media {
     width: 125px;
@@ -217,5 +226,16 @@ footer figure img {
     justify-content: space-between;
 }
 .social-media img {
+    width: 32px;
     cursor: pointer;
 }
+svg {
+    width: 32px;
+    fill: var(--DarkGrayish-Blue);
+}
+svg:hover {
+    fill: var(--StrongCyan);
+    cursor: pointer;
+}
+
+
