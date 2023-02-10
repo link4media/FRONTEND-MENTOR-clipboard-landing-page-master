@@ -1,0 +1,112 @@
+/* UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+/* GLOBAL STYLES */
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+h1, h2, h3 {
+    color: var(--DarkGrayish-Blue);
+    text-align: center;
+}
+h1 {
+    font-size: 2.75rem;
+    /* font-weight: 600; */
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 2rem 0;
+    color: var(--Grayish-Blue);
+}
+/* HEADER */
+header {
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 5rem 0;
+    /* height: 350px; */
+    display: flex;
+    /* gap: 2rem; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+figure, p {
+    margin-bottom: 4rem;
+}
+.hero-texts {
+    width: 700px;
+    text-align: center;
+}
+.hero-nav {
+    width: 700px;
+    max-width: 570px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button {
+    width: 15.5rem;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 10rem;
+    box-shadow: inset 0 -4px 0px rgba(0, 0, 0, 0.2) ;
+}
+.button:hover {
+    opacity: .8;
+}
+.button1 {
+    background-color: var(--StrongCyan);
+}
+.button2 {
+    background-color: var(--LightBlue);
+}
+
+main {
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.keep-track-container {
+    /* max-width: 700px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+.text-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.text-container img {
+
+}
