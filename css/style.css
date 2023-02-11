@@ -248,6 +248,9 @@ svg:hover {
     .snippets-container {
         width: 80%;
     }
+    .devices img {
+        width: 75%;
+    }
 }
 @media (max-width: 900px) {
     .keep-track-container {
