@@ -41,9 +41,7 @@ li, a {
     text-decoration: none;
     display: inline-block;
 }
-a:hover {
-    /* color: var(--StrongCyan); */
-}
+
 
 /* HEADER */
 header {
@@ -84,15 +82,13 @@ header {
     cursor: pointer;
     border-radius: 10rem;
 }
-.button:hover {
-    opacity: .8;
-}
 .button1 {
     background-color: var(--StrongCyan);
     box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2), 0 0.5em .5em hsl(171, 66%, 44%, 0.3);
 }
 .button1:hover {
     box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2), 0 0.5em 1em var(--StrongCyan);
+    opacity: .8;
 }
 .button2 {
     background-color: var(--LightBlue);
@@ -100,6 +96,7 @@ header {
 }
 .button2:hover {
     box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2), 0 0.5em 1em var(--LightBlue);
+    opacity: .8;
 }
 
 
@@ -109,7 +106,6 @@ main {
     width: 100%;
     max-width: 1440px;
 }
-
 /* MAIN / Containers */
 .text-container {
     max-width: 700px;
@@ -121,19 +117,14 @@ main {
 .container-3,
 .container-4,
 .container-5 {
-    margin-bottom: 8rem;
-}
-/* Container #1 */
-.container-1,
-.container-2,
-.container-3,
-.container-4,
-.container-5 {
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 8rem;
 }
+
+/* Container #1 */
 .keep-track-container {
     display: grid;
     gap: 5rem;
@@ -147,7 +138,6 @@ main {
     width: 58%;
     height: 70%;
     margin-top: 6rem;
-    grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -160,17 +150,27 @@ main {
     margin-bottom: 2rem;
 }
 
+/* Container #2 */
+.devices {
+    display: flex;
+    justify-content: center;
+}
+
 /* Container #3 */
 .workflow-container {
     width: 100%;
     display: flex;
     gap: 3rem;
     justify-content: space-evenly;
-    align-items: center;
 }
 .tools {
     width: 360px;
+    height:auto;
     text-align: center;
+    align-self: self-start;
+}
+.tool-1 img {
+    width: 35px;
 }
 .tools h3 {
     margin: 1.3rem 0;
@@ -212,11 +212,6 @@ footer figure img {
     margin-bottom: 1.6rem;
     color: var(--DarkGrayish-Blue);
 }
-.footer-nav a {
-    font-size: 1.2rem;
-    margin-bottom: 1.6rem;
-    color: var(--DarkGrayish-Blue);
-}
 .footer-nav a:hover {
     color: var(--StrongCyan);
 }
@@ -229,6 +224,8 @@ footer figure img {
     width: 32px;
     cursor: pointer;
 }
+
+/* SVGs */
 svg {
     width: 32px;
     fill: var(--DarkGrayish-Blue);
@@ -239,3 +236,110 @@ svg:hover {
 }
 
 
+
+/* MEDIA QUERIES */
+@media (max-width: 1100px) {
+    .keep-track-container {
+        gap: 2rem;
+    }
+    .snippets-image img {
+        width: 100%;
+    }
+    .snippets-container {
+        width: 80%;
+    }
+}
+@media (max-width: 900px) {
+    .keep-track-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .snippets-image {
+        width: 50%;
+        left: 0;
+        justify-self: center;
+    }
+    .snippets-container {
+        justify-self: center;
+    }
+    .snippets h3, p {
+        text-align: center;
+    }
+    .brands {
+        width: 95%;
+    }
+    .brands img {
+        width: 110px;
+    }
+}
+@media (max-width: 600px) {
+/* GENERALS */
+    h1 {
+        font-size: 1.85rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .hero-nav,
+    .workflow-container,
+    .brands,
+    footer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+}
+/* HEADER */
+    header {
+        background-image: url(../images/bg-header-mobile.png);
+        padding: 9rem 0;
+    }
+    .hero-texts,
+    .text-container {
+        width: 85%;
+    }
+    .button {
+        width: 19rem;
+        padding: 1rem 2rem;
+    }
+/* MAIN */
+    .snippets-image,
+    .devices img,
+    .tools {
+        width: 85%;
+        align-self: center;
+    }
+    .brands img {
+        width: 128px;
+        margin-bottom: 2.5rem;
+    }
+/* FOOTER */
+    footer {
+        height: 500px;
+        justify-content: space-evenly;
+    }
+    .logo-footer {
+        display: flex ;
+        justify-content: center;
+    }
+    .footer-nav {
+        margin-bottom: 3rem;
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        text-align: center;
+    }
+    .social-media {
+        margin-top: 10rem;
+        justify-content: space-evenly;
+        gap: 2.2rem;
+    }
+}
